@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Часто посещаемые сайты</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            height: 100vh; /* Занять всю высоту экрана */
+            margin: 0; /* Убираем отступы */
+            background: linear-gradient(45deg, #ffffff, #a3c1e0, #ffffff); 
+            background-size: 300% 300%; 
+            animation: gradientAnimation 15s ease infinite; 
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%; 
+            }
+            50% {
+                background-position: 100% 50%; 
+            }
+            100% {
+                background-position: 0% 50%; 
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em; 
+            color: #00008B; 
+            margin-bottom: 40px; 
+        }
+
+        .container {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+        .site {
+            background-color: rgba(240, 240, 240, 0.8); 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+            padding: 20px; 
+            text-align: center; 
+            flex: 1 1 calc(30% - 40px); 
+        }
+
+        p {
+            color: #00008B; 
+            font-size: 1.2em; 
+            margin: 10px 0; 
+        }
+
+        img {
+            width: 240px;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Список часто посещаемых сайтов:</h1>
+
+<div class="container">
+    <div class="site">
+        <p>Gmail</p>
+        <a href="https://mail.google.com/" target="_blank">
+            <img src="images/1.jpg" alt="Gmail">
+        </a>
+    </div>
+    <div class="site">
+        <p>Google</p>
+        <a href="https://www.google.com/" target="_blank">
+            <img src="images/2.jpg" alt="Google">
+        </a>
+    </div>
+    <div class="site">
+        <p>Telegram</p>
+        <a href="https://web.telegram.org/a/" target="_blank">
+            <img src="images/3.jpg" alt="Telegram">
+        </a>
+    </div>
+    <div class="site">
+        <p>Вконтакте</p>
+        <a href="https://vk.com/" target="_blank">
+            <img src="images/4.jpg" alt="Вконтакте">
+        </a>
+    </div>
+    <div class="site">
+        <p>Wikipedia</p>
+        <a href="https://www.wikipedia.org" target="_blank">
+            <img src="images/5.jpg" alt="Wikipedia">
+        </a>
+    </div>
+    <div class="site">
+        <p>YouTube</p>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="images/6.jpg" alt="YouTube">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
